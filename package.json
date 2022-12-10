@@ -1,0 +1,15 @@
+{
+	"name": "devtools",
+	"version": "0.0.0",
+	
+	"description": "Chrome Devtools hosted for easy use with Wrangler",
+	
+	"scripts": {
+		 "g": "git add . && git commit -m 0 && git push -u origin main -f",
+		"build-devtools": "node ./build-devtools.mjs",
+		"pub": "npx wrangler publish --assets built-devtools"
+	},
+	"devDependencies": {
+		"execa": "latest"
+	}
+}
